@@ -6,23 +6,31 @@
   <title></title>
 <link rel="stylesheet" href="style.css">
 <link rel="stylesheet" href="https://use.typekit.net/uol0pyd.css">
+<style>
+  .cursor {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: black;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+  }
+  .link .cursor {
+    /* Styles when the cursor is over a link */
+    background: red;
+  }
+  .button .cursor {
+    /* Styles when the cursor is over a button */
+    background: green;
+  }
+</style>
 </head>
 <body>
 
+
 	<section>
-<div class="cursors">
-  <div></div>
-  <div class="cursor rounded"></div>
-<div class="cursor pointed"><div>
-    <div></div> 
-     <div></div>  
-     <div></div>  
-     <div></div> 
-      <div></div> 
-       <div></div>  
-       <div></div>  
-       <div></div>
-</div>
+
 
 <h2>HIDANGAN</h2>
 <h2>INDISCHE</h2>
@@ -67,8 +75,23 @@
   <div class="column side">
     
   </div>
-</div>
-<script src="cursors.js"></script>
 
+    <div class="cursors">
+      <div>
+        <span></span>
+      </div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    
 </footer>
 </html>

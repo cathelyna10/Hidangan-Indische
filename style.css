@@ -60,7 +60,7 @@ top: 0;
 
 }
 
-/* Style the links inside the navigation bar */
+
 .topnav a {
   float: left;
   color: #e56032;
@@ -322,7 +322,7 @@ input[type=submit]:hover {
 
 
 
-/* Create three unequal columns that floats next to each other */
+
 .column {
   float: left;
   padding: 10px;
@@ -347,7 +347,7 @@ input[type=submit]:hover {
   clear: both;
 }
 
-/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+
 @media screen and (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
@@ -432,59 +432,53 @@ gap:16px; }
   opacity: 1;
 }
 
-/*div.cursors div {
-    position: absolute;
-    top:300px;
-    left: 300px;
-    width: 32px;
-    height: 32px;
-    background-color: darkred;
-    border-radius:50%;
-    z-index:10000;
-    pointer-events:none;
-    transform: translate(-50%, -50%);
-    background:gray;
-  width:200px;
-  height:200px;
-  cursor:url(http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif), auto;
-}
-}
-div.cursors div span {
-    position: absolute;
-    top:0;
-    left: 40px;
-    width: 300px;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 32px;
-    color: blue;
+
+html, body {
+  cursor: url('cursor2.png'), auto; 
 }
 
-
-cursor{   position: fixed; /* Fixed position to the viewport 
-    top: 0;
-    left: 0;
-    width: 32px;
-    height: 32px;
-    background-color: darkred;  Example color 
-    border-radius: 50%;
-    z-index: 10000;
-    pointer-events: none; /* Allows click events to pass through to elements below 
-    display: none; /* Start with the cursor not displayed */
-}}
-html,body {
-    cursor: url("webcursor.png"), auto !important;
-}
-/* Or if you want to apply it to specific elements, for example, links */
 a {
     cursor: url("webcursor.png"), pointer !important;
 }
 
 ::selection {
-  background: lightgrey; /* WebKit/Blink Browsers */
+  background: cadetblue; /* WebKit/Blink Browsers */
 }
 ::-moz-selection {
-  background: lightgrey;
+  background: cadetblue;
   opacity: 100%; /* Gecko Browsers */
   cursor: url("https://static.cargo.site/images/up.png"), auto !important;
+}
+
+
+div.cursors div {
+  position: absolute;
+  top: 300px;
+  left: 300px;
+  width: 32px;
+  height: 32px;
+  background-color: cadetblue;
+  border-radius: 50%;
+  z-index: 10000;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+}
+
+div.cursors div span {
+  position: absolute;
+  top: 0;
+  left: 40px;
+  width: 300px;
+  
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #ff4141;
+  
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+div.cursors div span.visible {
+  opacity: 1;
 }
