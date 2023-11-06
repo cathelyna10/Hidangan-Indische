@@ -148,7 +148,7 @@ h5 {font-size: 10px;font-family: "Akzidenz Grotesk Roman", sans-serif;color: #e5
     src: local('Akzidenz Grotesk Roman'), url('Akzidenz-grotesk-roman.woff') format('woff');
     }}
 
-.by {transform:translate(100px,-460px);background-color:grey;}
+.name {transform:translate(100px,-460px);background-color:grey;}
 
 .popup{border: solid;
     padding:17px; 
