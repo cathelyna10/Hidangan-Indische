@@ -434,7 +434,7 @@ gap:16px; }
 
 
 html, body {
-  cursor: url('cursor2.png'), auto; 
+  cursor: url('webcursor1.png'), auto; 
 }
 
 a {
@@ -450,7 +450,7 @@ a {
   cursor: url("https://static.cargo.site/images/up.png"), auto !important;
 }
 
-
+/*
 div.cursors div {
   position: absolute;
   top: 300px;
