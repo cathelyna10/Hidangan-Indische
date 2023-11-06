@@ -18,6 +18,13 @@ a :hover {
 }
 
 
+
+html {
+    cursor: url("webcursor1.png"), auto !important;
+}
+a {
+    cursor: url("webcursor.png"), auto !important;
+}
 /* selected link */
 a:active {
   color: cadetblue;
@@ -133,7 +140,15 @@ margin-left:-50px}
 
 h4{line-height: 30px; font-size: 2em;}
 
-.by{transform:translate(80px,-260px);}
+h5 {font-size: 10px;font-family: "Akzidenz Grotesk Roman", sans-serif;color: #e56032;}
+@font-face {
+    font-family: 'Akzidenz Grotesk Roman';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Akzidenz Grotesk Roman'), url('Akzidenz-grotesk-roman.woff') format('woff');
+    }}
+
+.by {transform:translate(100px,-460px);background-color:grey;}
 
 .popup{border: solid;
     padding:17px; 
@@ -433,21 +448,14 @@ gap:16px; }
 }
 
 
-html, body {
-  cursor: url('webcursor1.png'), auto; 
-}
-
-a {
-    cursor: url("webcursor.png"), pointer !important;
-}
 
 ::selection {
-  background: cadetblue; /* WebKit/Blink Browsers */
+  background: cadetblue; 
 }
 ::-moz-selection {
   background: cadetblue;
-  opacity: 100%; /* Gecko Browsers */
-  cursor: url("https://static.cargo.site/images/up.png"), auto !important;
+  opacity: 100%; 
+ 
 }
 
 /*
